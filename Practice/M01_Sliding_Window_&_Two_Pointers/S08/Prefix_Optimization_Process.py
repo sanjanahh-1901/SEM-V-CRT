@@ -24,7 +24,8 @@ print(nums)
 '''
 Input: gain = [-5,1,5,0,-7]
 Output: 1       
-'''
+
+#Solution
 class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
         n = len(gain)
@@ -32,3 +33,11 @@ class Solution:
         for i in range(n):
             alt[i + 1] = alt[i] + gain[i]  #O(n)
         return max(alt)  #O(n)
+'''
+
+curr_alt = 0
+max_alt = 0
+for g in gain:
+    curr_alt += g
+    max_alt = max(max_alt, curr_alt)
+return max_alt
