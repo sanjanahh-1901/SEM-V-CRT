@@ -53,12 +53,12 @@ class Solution:
             row.reverse()
             for i in range(len(row)):
                 row[i] = 1 - row[i]
-        return 
+        return image
 '''
 
 #Leetcode 84: Largest Rectangle in Histogram
 class Solution:
-    def FlipAndInvertImage(self, imxage: List[List[int]]) -> List[List[int]]:
+    def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
         for row in image:
             row.reverse()
             for i in range(len(row)):
@@ -67,8 +67,9 @@ class Solution:
                 else:
                     row[i] = 0
         return image  
+image = [[1,1,0],[1,0,1],[0,0,0]]
+print(Solution().flipAndInvertImage(image))
 
-'''     
 #row[i] = 1 if row[i] == 0 else 0 #logic 2
-row[i] = 1 - row[i] #logic 3
+#row[i] = 1 - row[i] #logic 3
 '''
