@@ -17,3 +17,16 @@ print(Solution.rotate(matrix)) #Output: [[7,4,1],[8,5,2],[9,6,3]]
 
 #Leetcode 1886: Determine Whether Matrix Can Be Obtained By Rotation
 #Solution using two loops
+class Solution:
+    def findRotation(self, mat: List[List[int]], target: List[List[int]]) -> bool:
+        n = len(mat)
+        for i in range(4):
+            if mat == target:
+                return True
+            #Transpose
+            for i in range(n):
+                for j in range(i+1, n):
+                    mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
+            for j in mat:
+                j.reverse()
+        return False        

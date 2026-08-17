@@ -57,6 +57,7 @@ class Solution:
 '''
 
 #Leetcode 84: Largest Rectangle in Histogram
+#Solution using stack
 class Solution:
     def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
         for row in image:
