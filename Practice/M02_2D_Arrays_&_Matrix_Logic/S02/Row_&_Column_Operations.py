@@ -72,4 +72,4 @@ print(Solution().flipAndInvertImage(image))
 
 #row[i] = 1 if row[i] == 0 else 0 #logic 2
 #row[i] = 1 - row[i] #logic 3
-'''
+
