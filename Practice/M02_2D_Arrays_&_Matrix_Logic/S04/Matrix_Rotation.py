@@ -30,3 +30,6 @@ class Solution:
             for j in mat:
                 j.reverse()
         return False        
+mat = [[0,1],[1,0]]
+target = [[1,0],[0,1]]
+print(Solution().findRotation(mat,target)) #Output: True
