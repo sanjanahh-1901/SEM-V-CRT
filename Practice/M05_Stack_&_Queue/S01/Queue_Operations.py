@@ -32,3 +32,4 @@ q.enqueue(20)
 q.enqueue(30)
 q.display() #10 20 30
 
+#Stack Implementation using Linked List 
